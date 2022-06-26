@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h2><center>LetsGrowMore</center></h2>
+    <h1 class="heading">Simple Calculator</h1>
+    <div class="cal-box">
+        <form name="form">
+            <input class="textview" name="textview" placeholder="0" style="overflow: scroll" disabled="">
+        </form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="button" id="clean" onclick="clean()">
+                            <div class="inner Exp"> AC</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" id="clear" onclick="back()">
+                            <div class="inner">C </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="opt('%')">
+                            <div class="inner Mod"> %</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="opt('/')">
+                            <div class="inner">÷</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button none" onclick="insert(7)">
+                            <div class="inner">7</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(8)">
+                            <div class="inner">8</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(9)">
+                            <div class="inner">9</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="opt('*')">
+                            <div class="inner">×</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button none" onclick="insert(4)">
+                            <div class="inner">4</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(5)">
+                            <div class="inner">5</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(6)">
+                            <div class="inner">6</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert('-')">
+                            <div class="inner">-</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button none" onclick="insert(1)">
+                            <div class="inner">1</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(2)">
+                            <div class="inner">2</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert(3)">
+                            <div class="inner">3</div>
+                        </div>
+                    </td>
+                    <td id="plus">
+                        <div id="first" class="button none" onclick="opt('+')">
+                            <div class="inner">+</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="zero" class="button none" onclick="zero()">
+                            <div class="inner">0 </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button none" onclick="insert('.')">
+                            <div class="inner">. </div>
+                        </div>
+                    </td>
+                    <td colspan="2" id="equal">
+                        <div id="second" class="button none" onclick="equal()">
+                            <div class="inner">=</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Secular+One&display=swap');
+h2{
+    margin-top: 10px;
+    font-family: 'Secular One', sans-serif;
+    text-decoration: underline;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: bisque;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 45px;
+    font-family: 'Oleo Script', cursive;
+}
+
+.cal-box {
+    margin-top: 60px;
+    border-radius: 20px;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   background:gray;
+    padding: 0;
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, .5);
+    box-shadow: inset 0 -5px 10px 5px rgba(0, 0, 0, .5);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.textview {
+    width: 95%;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 24px auto 15px auto;
+    font-size: 50px;
+    text-align: right;
+    font-family: 'Orelega One', cursive;
+    background: wheat;
+    border-radius: 5%;
+    color: black;
+    padding:30px;
+    border: solid 6pt gray;
+    
+    overflow-x: scroll;
+   box-shadow: inset -5px -5px 12px #ffffff,
+        inset 5px 5px 12px rgba(1, 1, 1, 0.5)
+}
+
+.Exp {
+    font-size: 35px;
+}
+
+.Mod {
+    font-size: 35px;
+}
+
+table {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding:30px;
+    border: solid 6pt gray;
+    
+}
+
+#clean {
+    background: #ff1900;
+    color: #fff;
+    box-shadow: inset 0 5px 10px 0 #ff1900,
+        
+        0 5px 10px 0px #1e211e;
+}
+
+#clean:active {
+    box-shadow: inset 0 -5px 10px 0 #ff1900,
+        inset 0 5px 10px 3px #2d1f1fba,
+        0 0px 10px 0px #3f423f00;
+}
+
+#clear {
+    background: #FFD124;
+    color: #fff;
+    box-shadow: inset 0 5px 10px 0 #FFD124,
+        inset 0 -5px 10px 3px #2d1f1fba,
+        0 5px 10px 0px #1e211e;
+}
+
+#clear:active {
+    box-shadow: inset 0 -5px 10px 0 #FFD124,
+        inset 0 5px 10px 3px #2d1f1fba,
+        0 0px 10px 0px #3f423f00;
+}
+
+#img {
+    width: 80%;
+    height: 80%;
+    transform: scale(.9);
+}
+
+#equal,
+#second {
+    width: 144px;
+}
+
+#second {
+    background: green;
+    color: #fff;
+    box-shadow: inset 0 5px 10px 0 #31e008, inset 0 -5px 10px 3px #2a5a22bf, 0 5px 10px 0px #1e211e;
+}
+
+#second:active {
+    box-shadow: inset 0 -5px 10px 0 #31e008,
+        inset 0 5px 10px 3px #2a5a22bf,
+        0 0px 10px 0px #3f423f00;
+}
+
+.button {
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    left: 9px;
+    right: 0;
+    margin: 3px;
+    border: 3px solid orangered;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 10px;
+    background: #f0eeef;
+    color: #3b3b3c;
+    box-shadow: inset 0 5px 10px 0 #fff,
+        inset 0 -5px 10px 3px #847a7aba,
+        0 5px 10px 0px #1e211e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cal-box table tr td .button:active {
+    box-shadow: inset 0 -5px 10px 0 #fff,
+        inset 0 5px 10px 3px #847a7aba,
+        0 0px 10px 0px #3f423f00;
+}
+
+.inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2.5px);
+}
+
+.cal-box table tr td .button .inner:active {
+    transform: translateY(2.5px) scale(.98);
+}
+
+::selection {
+    background: transparent;
+    color: auto;
+}

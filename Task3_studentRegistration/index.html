@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title> Please register </title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+<body>
+   <div class="container">
+     <div class="card">
+       <div class="inner-box">
+         <div class="card_front">
+              <h2>STUDENT REGISTRATION FORM</h2>
+              <form >
+              <input type="text" id="fname" class="input-box" placeholder="first-name" name="Fname" required>
+              <input type="text" id="lname" class="input-box" placeholder="last-name" name="Lname" required>
+              <input type="number"  id="phone"class="input-box" placeholder="phone-no"  name="Phno"  pattern="[789][0-9]{9}"  required>
+              <input type="text" id="email" class="input-box" placeholder="email"  name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.com$" required>
+              <p>Gender</p>
+              <select name="Gender" id="list" placeholder="" required>
+              <option value="None">None</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+             </select> <br>
+             <br>
+             <p>Date of Birth</p>
+             <input type="date" id="dob" placeholder="Enter the DOB" required/>
+             <br><br>
+             <p>Enter the profile link</p>
+             <input id="image" type="text" placeholder="Enter the link url">
+               <button id="sbtn" onclick="add()">Submit</button>
+                <button id="clear" onclick="del()">Clear</button>
+              </form>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   <div class="table">
+    
+    <table id="display">
+      <tr>
+        <th><h2>Profile Picture</h2></th>
+         <th><h2>Details</h2></th>
+         
+     </tr>
+            <tr><h1>Student details</h1></tr>
+            
+    </table>
+</div>
+<div class="v"></div>
+</body>
+</html>

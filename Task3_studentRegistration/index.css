@@ -1,0 +1,159 @@
+/*body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(registration.jpg); 
+}*/
+.container{
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+    background: rgba(187,187,245);
+    color: #fff;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 150px;
+  }
+  .card{
+    width: 350px;
+    height: 650px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+  }
+  .inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%
+  }
+  .card_front{
+    position: absolute;
+    width: 100%;
+    height: : 100%;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)), url(../pic.jpg);
+    padding: 55px;
+    box-sizing: border-box;
+  }
+  .card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+  }
+  ::placeholder{
+    color: #fff;
+    font-size: 12px;
+  }
+  button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .submit-btn{
+    position: relative;
+  }
+  .submit-btn::after{
+    content: "\27a4";
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%
+    background:#fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+  }
+  .submit-btn:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  .v{
+    border-left: 5px solid blueviolet;
+    height: 800px;
+    top: 0px;
+    margin-left: 695px;
+}
+    .detail{
+      margin: 15px 80px 20px 0px;
+      text-align: center;
+    }
+    .table{
+        border: 5px solid blue;
+        margin: 15px 80px 20px 0px;
+        float: right;
+        height: auto;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        width: 35%;
+        color: black;
+    }
+    
+    #display{
+        width: 100%;
+    }
+    td{
+      background-color: white;
+      justify-items: center;
+  }
+  
+  th{
+      color:blue;
+      background-color:burlywood;
+  }
+  
+  b{
+      color: darkred;
+  }
+    #sbtn,#clear{
+      color:wheat;
+      background-color: rgba(0, 0, 255, 0.144);
+      margin-top: 15px;
+      padding: 5px;
+      border-radius: 4px 4px;
+      width: 40%;
+      cursor: pointer;
+      margin-left: 20px;
+  }
+  
+  #clear{
+      display: inline-block;
+  }
+  
+  #sbtn:hover,#clear:hover{
+      background-color: green;
+  }
+  #display th,td{
+    
+    border: 1px solid blue;
+    width: 50%;
+}
+
+  
+    
+    
+    
+    
+  

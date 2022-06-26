@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+   margin: 0;
+   padding:0;
+   font-family: 'Source Code Pro', monospace;
+}
+body{
+    background:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 90vw;
+}
+.title{
+  font-size:30px;
+  font-weight:600;
+  color:rgb(8,6,133);
+  letter-spacing: 1px
+  margin: 30px;
+}
+.todo-list{
+     width:450px;
+     padding:20px;
+     box-shadow:0 10px 40px rgba(0,0,0,1);
+     border-radius:5px;
+     background-color:#ffff;
+}
+.list-head{
+    display: grid;
+    grid-template-columns:4fr 1fr;
+    gap:20px;
+}
+.entered-list{
+  padding:10px;
+  border-radius:5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size:16px;
+  outline:none;
+}
+.add-list{
+   border:none;
+   border-radius:5px;
+   background-color:rgb(8,6,133);
+   outline:none;
+   font-size:16px;
+   color:#fff;
+   cursor:pointer;
+   opacity: .6;
+   pointer-events:none;
+}
+.add-list.active{
+    opacity:1;
+    pointer-events: all;
+}
+.tasks{
+   width:100%;
+   margin-top:30px;
+}
+.item{
+   padding:10px;
+   border-radius:5px;
+   box-shadow:0 10px 30px rgba(0, 0, 0, 0.1);
+   margin-bottom:20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.item p{
+   font-size:22px;
+   font-weight:500;
+   color:#111;
+   letter-spacing:1px;
+}
+.item.completed p{
+   text-decoration: line-through;
+   color:#11111180;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.item-btn i{
+     color: rgb(8,6,133);
+     font-size:25px;
+     cursor:pointer;
+}
